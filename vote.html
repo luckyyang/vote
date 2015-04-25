@@ -1,0 +1,19 @@
+<head>
+  <title>vote</title>
+</head>
+<body>
+  <h1>Welcome to Meteor!</h1>
+  {{> showPlayer}}
+</body>
+
+<template name="showPlayer">
+  <ol>
+  {{#each members}}
+    <li>{{name}} {{score}}</li>
+  {{/each}}
+  </ol>
+  <div class="action">
+    <span class="player-name"></span>
+    <button>add 5 points</button>
+  </div>
+</template>
